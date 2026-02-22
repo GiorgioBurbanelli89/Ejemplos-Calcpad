@@ -1,5 +1,6 @@
 "Factor de Magnificacion Dinamica
-'<h3 style="color:#2563eb">D = 1 / &radic;[(1 &minus; r&sup2;)&sup2; + (2&xi;r)&sup2;]</h3>
+#noc
+'<h3 style="color:#2563eb">'D_f = 1/sqr((1 - r^2)^2 + (2*ξ*r)^2)'</h3>
 '<hr>
 
 "Ecuacion general
@@ -8,7 +9,7 @@
 #show
 #noc
 D_f(r; xi) = 1/sqr((1 - r^2)^2 + (2*xi*r)^2)
-'donde r = &omega;/&omega;<sub>n</sub> (razon de frecuencias), &xi; = c/c<sub>cr</sub> (razon de amortiguamiento)
+'donde 'r = ω/ω_n' (razon de frecuencias),'ξ = c/c_r'(razon de amortiguamiento)
 '<hr>
 
 #equ
@@ -58,15 +59,15 @@ zhr$
 r_res = 1
 #noc
 'En resonancia (r = 1):
-'Para &xi; = 0.125: D = 'D_f(r_res; 0.125)'; &xi; = 0.2: D = 'D_f(r_res; 0.2)
-'Para &xi; = 0.25: D = 'D_f(r_res; 0.25)'; &xi; = 0.5: D = 'D_f(r_res; 0.5)
-'Para &xi; = 0.707: D = 'D_f(r_res; 0.707)'; &xi; = 1.0: D = 'D_f(r_res; 1)
+'Para 'ξ' = 0.125: D = 'D_f(r_res; 0.125)';'ξ' = 0.2: D = 'D_f(r_res; 0.2)
+'Para &xi; = 0.25: D = 'D_f(r_res; 0.25)';'ξ' = 0.5: D = 'D_f(r_res; 0.5)
+'Para &xi; = 0.707: D = 'D_f(r_res; 0.707)';'ξ' = 1.0: D = 'D_f(r_res; 1)
 'Para &xi; = 2.0: D = 'D_f(r_res; 2)
 '<hr>
 '<b>Observaciones:</b>
-'D<sub>max</sub> = 1/(2&xi;) cuando r &asymp; 1
-'Para &xi; &lt; 1/&radic;2 &asymp; 0.707: pico en r = &radic;(1&minus;2&xi;&sup2;) &lt; 1
-'Para &xi; &ge; 0.707: D &le; 1 (sin amplificacion)
+D_max = 1/2*ξ'; cuando r &asymp; 1
+'Para 'ξ'; &lt'1/sqrt(2)'&asymp; 0.707: pico en 'r = sqrt(1 - 2*ξ^2)'&lt; 1
+'Para 'ξ'; &ge; 0.707: D &le; 1 (sin amplificacion)
 '<hr>
 
 "Animacion Sincronizada
@@ -78,7 +79,10 @@ sync_anim$(0.125; 0.707; poco amortiguamiento; buen amortiguamiento)
 
 "Resumen
 #noc
-'<b>1.</b> D(r) muestra amplificacion. En resonancia D<sub>max</sub> = 1/(2&xi;) = 'D_f(1; 0.125)' para &xi;=0.125
+'<b>1.</b> 'D(r)' muestra amplificacion. En resonancia 'D_max = 1/(2*ξ)'='D_f(1; 0.125)' para &xi;=0.125
+
 '<b>2.</b> Con &xi;=0.125 la masa oscila mucho; con &xi;=0.707 se amortigua en 2-3 ciclos
-'<b>3.</b> El fasor gira con &omega;<sub>d</sub> y decrece como e<sup>&minus;&xi;&omega;<sub>n</sub>t</sup>
-'<b>4.</b> La sinusoidal es la proyeccion vertical del fasor. Envolvente: &plusmn;e<sup>&minus;&xi;&omega;<sub>n</sub>t</sup>
+
+'<b>3.</b> El fasor gira con 'ω_d' y decrece como 'e^(ξ*w_n*t)
+
+'<b>4.</b> La sinusoidal es la proyeccion vertical del fasor. Envolvente: &plusmn'e^(ξ*w_n*t)'
