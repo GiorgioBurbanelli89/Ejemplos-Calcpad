@@ -1,0 +1,189 @@
+"Técnicas de Espaciado e Imágenes en Calcpad<hr/><small>Guía completa de cómo organizar contenido con espacios y gráficas</small>
+
+'<h2 style="color:#1976D2; border-bottom:2px solid #1976D2; padding-bottom:10px;">1. Espaciado Básico con HTML</h2>
+
+'<p>En Calcpad puedes usar diferentes técnicas para crear espacios y organizar tu contenido. Aquí te muestro las más útiles:</p>
+
+'<h3 style="color:#388E3C;">Espaciado con &lt;br&gt;</h3>
+'<p>El elemento &lt;br&gt; crea un salto de línea simple:</p>
+'<p>Primera línea</p>
+'<br>
+'<p>Segunda línea (con espacio arriba)</p>
+'<br><br>
+'<p>Tercera línea (con doble espacio arriba)</p>
+
+'<h3 style="color:#388E3C;">Espaciado con &lt;hr&gt;</h3>
+'<p>La línea horizontal crea una separación visual clara:</p>
+'<p>Contenido antes de la línea</p>
+'<hr>
+'<p>Contenido después de la línea</p>
+
+'<h2 style="color:#1976D2; border-bottom:2px solid #1976D2; padding-bottom:10px;">2. Espaciado con CSS</h2>
+
+'<h3 style="color:#388E3C;">Márgenes y Padding</h3>
+'<p>Puedes usar estilos CSS para controlar el espaciado:</p>
+
+'<div style="margin:30px 0; padding:20px; background-color:#f8f9fa; border-left:4px solid #2196F3;">
+'<p><strong>Ejemplo con margen y padding:</strong></p>
+'<p>Este div tiene 30px de margen arriba y abajo, y 20px de padding interno.</p>
+'</div>
+
+'<h3 style="color:#388E3C;">Espaciado entre Elementos</h3>
+'<p>Usa la propiedad margin para separar elementos:</p>
+
+'<p style="margin-bottom:15px;">Párrafo con margen inferior de 15px</p>
+'<p style="margin-top:25px;">Párrafo con margen superior de 25px</p>
+
+'<h2 style="color:#1976D2; border-bottom:2px solid #1976D2; padding-bottom:10px;">3. Colocación de Imágenes con Espaciado</h2>
+
+'<h3 style="color:#388E3C;">Imagen Centrada con Espacios</h3>
+'<p>Aquí tienes una imagen centrada con espacios arriba y abajo:</p>
+
+'<div style="margin:30px 0; text-align:center;">
+'<img style="width:400px; border:2px solid #ccc; border-radius:8px;" src="https://imgur.com/8zxZExb.png" alt="Ejemplo de Imagen">
+'<p style="margin-top:15px; font-style:italic; color:#666;">Figura 1: Ejemplo de imagen con espaciado controlado</p>
+'</div>
+
+'<h3 style="color:#388E3C;">Imagen con Espaciado Asimétrico</h3>
+'<p>Puedes crear espacios diferentes arriba y abajo:</p>
+
+'<div style="margin:20px 0 40px 0; text-align:center;">
+'<img style="width:350px; border:2px solid #ddd; border-radius:5px;" src="https://imgur.com/8zxZExb.png" alt="Imagen con Espaciado Asimétrico">
+'<p style="margin-top:20px; font-style:italic; color:#666;">Figura 2: Espaciado asimétrico (20px arriba, 40px abajo)</p>
+'</div>
+
+'<h2 style="color:#1976D2; border-bottom:2px solid #1976D2; padding-bottom:10px;">4. Layouts con Flexbox y Espaciado</h2>
+
+'<h3 style="color:#388E3C;">Dos Columnas con Espaciado</h3>
+'<p>Layout de dos columnas con control de espacios:</p>
+
+'<div style="display:flex; gap:30px; margin:25px 0;">
+'<div style="flex:1;">
+'<h4 style="color:#1976D2; margin-bottom:15px;">Columna Izquierda</h4>
+'<p>Esta columna contiene texto explicativo. El espaciado se controla con márgenes y padding.</p>
+'<p style="margin-top:20px;">Puedes agregar más contenido aquí con el espaciado que desees.</p>
+'</div>
+'<div style="flex:0 0 300px;">
+'<img style="width:100%; border:2px solid #ccc; border-radius:8px;" src="https://imgur.com/8zxZExb.png" alt="Imagen en Columna">
+'<p style="margin-top:15px; font-size:12px; text-align:center; color:#666;">Imagen en columna derecha</p>
+'</div>
+'</div>
+
+'<h3 style="color:#388E3C;">Tres Columnas con Espaciado Uniforme</h3>
+'<p>Layout de tres columnas con espaciado consistente:</p>
+
+'<div style="display:flex; gap:20px; margin:30px 0;">
+'<div style="flex:1; text-align:center;">
+'<h4 style="color:#388E3C; margin-bottom:15px;">Columna 1</h4>
+'<p>Contenido de la primera columna</p>
+'<p style="margin-top:10px;">Con espaciado controlado</p>
+'</div>
+'<div style="flex:1; text-align:center;">
+'<img style="width:200px; border:2px solid #ddd; border-radius:5px;" src="https://imgur.com/8zxZExb.png" alt="Imagen Central">
+'<p style="margin-top:10px; font-size:12px; color:#666;">Imagen central</p>
+'</div>
+'<div style="flex:1; text-align:center;">
+'<h4 style="color:#388E3C; margin-bottom:15px;">Columna 3</h4>
+'<p>Contenido de la tercera columna</p>
+'<p style="margin-top:10px;">Con espaciado controlado</p>
+'</div>
+'</div>
+
+'<h2 style="color:#1976D2; border-bottom:2px solid #1976D2; padding-bottom:10px;">5. Espaciado para Gráficas y Plots</h2>
+
+'<h3 style="color:#388E3C;">Gráfica con Explicación</h3>
+'<p>Cuando trabajas con gráficas, es importante dejar espacio suficiente para la explicación:</p>
+
+'<div style="margin:25px 0;">
+'<p><strong>Explicación de la gráfica:</strong></p>
+'<p>Esta gráfica muestra la relación entre la carga aplicada y la deflexión de una viga. Como puedes ver, la relación es no lineal debido a los efectos del material.</p>
+'</div>
+
+'<div style="margin:20px 0; text-align:center;">
+'<img style="width:500px; border:2px solid #ccc; border-radius:8px;" src="https://imgur.com/8zxZExb.png" alt="Gráfica de Carga vs Deflexión">
+'<p style="margin-top:15px; font-style:italic; color:#666;">Figura 3: Gráfica de carga vs deflexión con espaciado adecuado</p>
+'</div>
+
+'<div style="margin:25px 0;">
+'<p><strong>Análisis de la gráfica:</strong></p>
+'<p>La curva muestra un comportamiento elástico inicial seguido de una región plástica. El punto de fluencia está claramente marcado en la transición.</p>
+'</div>
+
+'<h2 style="color:#1976D2; border-bottom:2px solid #1976D2; padding-bottom:10px;">6. Espaciado para Tablas y Datos</h2>
+
+'<h3 style="color:#388E3C;">Tabla con Espaciado</h3>
+'<p>Las tablas también se benefician del espaciado adecuado:</p>
+
+'<div style="margin:30px 0;">
+'<table style="width:100%; border-collapse:collapse;">
+'<tr style="background-color:#f5f5f5;">
+'<th style="padding:15px; border:1px solid #ddd; text-align:left;">Propiedad</th>
+'<th style="padding:15px; border:1px solid #ddd; text-align:center;">Valor</th>
+'<th style="padding:15px; border:1px solid #ddd; text-align:center;">Unidad</th>
+'</tr>
+'<tr><td style="padding:12px; border:1px solid #ddd;">Altura</td><td style="padding:12px; border:1px solid #ddd; text-align:center;">300</td><td style="padding:12px; border:1px solid #ddd; text-align:center;">mm</td></tr>
+'<tr><td style="padding:12px; border:1px solid #ddd;">Ancho</td><td style="padding:12px; border:1px solid #ddd; text-align:center;">300</td><td style="padding:12px; border:1px solid #ddd; text-align:center;">mm</td></tr>
+'<tr><td style="padding:12px; border:1px solid #ddd;">Espesor</td><td style="padding:12px; border:1px solid #ddd; text-align:center;">10</td><td style="padding:12px; border:1px solid #ddd; text-align:center;">mm</td></tr>
+'</table>
+'</div>
+
+'<h2 style="color:#1976D2; border-bottom:2px solid #1976D2; padding-bottom:10px;">7. Técnicas Avanzadas de Espaciado</h2>
+
+'<h3 style="color:#388E3C;">Espaciado Condicional</h3>
+'<p>Puedes usar diferentes espaciados según el contexto:</p>
+
+'<div style="margin:20px 0;">
+'<p><strong>Sección importante:</strong></p>
+'<div style="margin:15px 0; padding:20px; background-color:#e3f2fd; border-radius:8px; border-left:4px solid #2196F3;">
+'<p>Esta sección tiene un espaciado especial para destacarla del resto del contenido.</p>
+'</div>
+'</div>
+
+'<h3 style="color:#388E3C;">Espaciado para Listas</h3>
+'<p>Las listas también se benefician del espaciado:</p>
+
+'<div style="margin:25px 0;">
+'<ul style="margin:15px 0;">
+'<li style="margin-bottom:8px;"><strong>Elemento 1:</strong> Con descripción detallada</li>
+'<li style="margin-bottom:8px;"><strong>Elemento 2:</strong> Con descripción detallada</li>
+'<li style="margin-bottom:8px;"><strong>Elemento 3:</strong> Con descripción detallada</li>
+'</ul>
+'</div>
+
+'<h2 style="color:#1976D2; border-bottom:2px solid #1976D2; padding-bottom:10px;">8. Resumen de Técnicas</h2>
+
+'<div style="background-color:#f8f9fa; padding:20px; border-radius:8px; margin:25px 0;">
+'<h4 style="color:#1976D2; margin-bottom:15px;">📋 Técnicas de Espaciado en Calcpad</h4>
+'<ul style="margin:15px 0;">
+'<li style="margin-bottom:10px;"><strong>&lt;br&gt;:</strong> Saltos de línea simples</li>
+'<li style="margin-bottom:10px;"><strong>&lt;hr&gt;:</strong> Separadores horizontales</li>
+'<li style="margin-bottom:10px;"><strong>margin:</strong> Espaciado externo</li>
+'<li style="margin-bottom:10px;"><strong>padding:</strong> Espaciado interno</li>
+'<li style="margin-bottom:10px;"><strong>gap:</strong> Espaciado entre elementos flexbox</li>
+'<li style="margin-bottom:10px;"><strong>text-align:</strong> Alineación de contenido</li>
+'</ul>
+'</div>
+
+'<h2 style="color:#1976D2; border-bottom:2px solid #1976D2; padding-bottom:10px;">9. Ejemplo Final Integrado</h2>
+
+'<p>Aquí tienes un ejemplo final que integra todas las técnicas:</p>
+
+'<div style="display:flex; gap:25px; margin:30px 0; align-items:flex-start;">
+'<div style="flex:1;">
+'<h4 style="color:#388E3C; margin-bottom:20px;">Análisis Estructural</h4>
+'<p>Este ejemplo demuestra cómo usar el espaciado para crear documentos profesionales y legibles en Calcpad.</p>
+'<br>
+'<p>El espaciado adecuado mejora la legibilidad y hace que el contenido sea más fácil de seguir.</p>
+'</div>
+'<div style="flex:0 0 250px;">
+'<img style="width:100%; border:2px solid #ccc; border-radius:8px;" src="https://imgur.com/8zxZExb.png" alt="Ejemplo Final">
+'<p style="margin-top:15px; font-size:12px; text-align:center; color:#666;">Ejemplo de integración</p>
+'</div>
+'</div>
+
+'<hr style="margin:40px 0; border:1px solid #ddd;">
+'<div style="text-align:center; color:#666; font-size:12px;">
+'<p><strong>Técnicas de Espaciado e Imágenes en Calcpad</strong><br>
+'Guía completa de organización de contenido<br>
+'Fecha: $(Get-Date -Format "dd/MM/yyyy HH:mm")</p>
+'</div>
